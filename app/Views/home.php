@@ -93,7 +93,7 @@
                     <div class="slider-text">
                         <h2 class="wow fadeInLeft" data-wow-delay="1s">EAMES LOUGE CHAIR<br>AND OTOMAN</h2>
                         <p class="wow fadeInRight" data-wow-delay="1s">Own an icon of modern design</p>
-                        <a class="wow bounceInDown" data-wow-delay="0.8s" href="categorie-page.html">shop now</a>
+                        <a class="wow bounceInDown" data-wow-delay="0.8s" href="javascript:void(0)">shop now</a>
                     </div>
                     <!-- Slider Text End -->
                 </div>
@@ -104,7 +104,7 @@
                     <div class="slider-text">
                         <h2 class="wow zoomInUp" data-wow-delay="0.5s">IF YOUR PURCHASE<br>IS OVER $350</h2>
                         <p class="wow zoomInUp" data-wow-delay="0.6s">We’ll give you a FREE delivery!</p>
-                        <a class="wow zoomInUp" data-wow-delay="1s" href="categorie-page.html">shop now</a>
+                        <a class="wow zoomInUp" data-wow-delay="1s" href="javascript:void(0)">shop now</a>
                     </div>
                     <!-- Slider Text End -->
                 </div>
@@ -141,7 +141,7 @@
                                             <img class="secondary-img" src="<?=base_url()?>/public/img/new-products/1_2.webp" alt="single-product">
                                         </a>
                                         <div class="quick-view">
-                                            <a href="index.html#" data-bs-toggle="modal" data-bs-target="#myModal"><i class="pe-7s-look"></i>quick view</a>
+                                            <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#myModal"><i class="pe-7s-look"></i>quick view</a>
                                         </div>
                                         <span class="sticker-new">new</span>
                                     </div>
@@ -151,7 +151,7 @@
                                         <h4><a href="javascript:void(0)">Sheepskin Pillow2</a></h4>
                                         <p class="price"><span>$241.99</span></p>
                                         <div class="action-links2">
-                                            <a data-bs-toggle="tooltip" title="Add to Cart" href="cart.html">add to cart</a>
+                                            <a data-bs-toggle="tooltip" title="Add to Cart" href="javascript:void(0)">add to cart</a>
                                         </div>
                                     </div>
                                     <!-- Product Content End -->
@@ -166,7 +166,7 @@
                                             <img class="secondary-img" src="<?=base_url()?>/public/img/new-products/5_1.webp" alt="single-product">
                                         </a>
                                         <div class="quick-view">
-                                            <a href="index.html#" data-bs-toggle="modal" data-bs-target="#myModal"><i class="pe-7s-look"></i>quick view</a>
+                                            <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#myModal"><i class="pe-7s-look"></i>quick view</a>
                                         </div>
                                         <span class="sticker-new">new</span>
                                     </div>
@@ -176,7 +176,7 @@
                                         <h4><a href="javascript:void(0)">Modern Desk Lamp</a></h4>
                                         <p class="price"><span>$122.00</span></p>
                                         <div class="action-links2">
-                                            <a data-bs-toggle="tooltip" title="Add to Cart" href="cart.html">add to cart</a>
+                                            <a data-bs-toggle="tooltip" title="Add to Cart" href="javascript:void(0)">add to cart</a>
                                         </div>
                                     </div>
                                     <!-- Product Content End -->
@@ -195,7 +195,7 @@
                                             <img class="secondary-img" src="<?=base_url()?>/public/img/new-products/2_2.webp" alt="single-product">
                                         </a>
                                         <div class="quick-view">
-                                            <a href="index.html#" data-bs-toggle="modal" data-bs-target="#myModal"><i class="pe-7s-look"></i>quick view</a>
+                                            <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#myModal"><i class="pe-7s-look"></i>quick view</a>
                                         </div>
                                         <span class="sticker-new">new</span>
                                     </div>
@@ -205,7 +205,7 @@
                                         <h4><a href="javascript:void(0)">Carte Postal Clock</a></h4>
                                         <p class="price"><span>$2000</span></p>
                                         <div class="action-links2">
-                                            <a data-bs-toggle="tooltip" title="Add to Cart" href="cart.html">add to cart</a>
+                                            <a data-bs-toggle="tooltip" title="Add to Cart" href="javascript:void(0)">add to cart</a>
                                         </div>
                                     </div>
                                     <!-- Product Content End -->
@@ -220,7 +220,7 @@
                                             <img class="secondary-img" src="<?=base_url()?>/public/img/new-products/6_2.webp" alt="single-product">
                                         </a>
                                         <div class="quick-view">
-                                            <a href="index.html#" data-bs-toggle="modal" data-bs-target="#myModal"><i class="pe-7s-look"></i>quick view</a>
+                                            <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#myModal"><i class="pe-7s-look"></i>quick view</a>
                                         </div>
                                         <span class="sticker-new">new</span>
                                     </div>
@@ -230,7 +230,7 @@
                                         <h4><a href="javascript:void(0)">Nulla massa est</a></h4>
                                         <p class="price"><span>$602</span></p>
                                         <div class="action-links2">
-                                            <a data-bs-toggle="tooltip" title="Add to Cart" href="cart.html">add to cart</a>
+                                            <a data-bs-toggle="tooltip" title="Add to Cart" href="javascript:void(0)">add to cart</a>
                                         </div>
                                     </div>
                                     <!-- Product Content End -->
@@ -249,7 +249,7 @@
                                             <img class="secondary-img" src="<?=base_url()?>/public/img/new-products/3_2.webp" alt="single-product">
                                         </a>
                                         <div class="quick-view">
-                                            <a href="index.html#" data-bs-toggle="modal" data-bs-target="#myModal"><i class="pe-7s-look"></i>quick view</a>
+                                            <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#myModal"><i class="pe-7s-look"></i>quick view</a>
                                         </div>
                                         <span class="sticker-new">new</span>
                                     </div>
@@ -259,7 +259,7 @@
                                         <h4><a href="javascript:void(0)">congue sitamet</a></h4>
                                         <p class="price"><span>$241.99</span></p>
                                         <div class="action-links2">
-                                            <a data-bs-toggle="tooltip" title="Add to Cart" href="cart.html">add to cart</a>
+                                            <a data-bs-toggle="tooltip" title="Add to Cart" href="javascript:void(0)">add to cart</a>
                                         </div>
                                     </div>
                                     <!-- Product Content End -->
@@ -274,7 +274,7 @@
                                             <img class="secondary-img" src="<?=base_url()?>/public/img/new-products/4_1.webp" alt="single-product">
                                         </a>
                                         <div class="quick-view">
-                                            <a href="index.html#" data-bs-toggle="modal" data-bs-target="#myModal"><i class="pe-7s-look"></i>quick view</a>
+                                            <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#myModal"><i class="pe-7s-look"></i>quick view</a>
                                         </div>
                                         <span class="sticker-new">new</span>
                                     </div>
@@ -284,7 +284,7 @@
                                         <h4><a href="javascript:void(0)">Splacerat volutpat</a></h4>
                                         <p class="price"><span>$122.99</span></p>
                                         <div class="action-links2">
-                                            <a data-bs-toggle="tooltip" title="Add to Cart" href="cart.html">add to cart</a>
+                                            <a data-bs-toggle="tooltip" title="Add to Cart" href="javascript:void(0)">add to cart</a>
                                         </div>
                                     </div>
                                     <!-- Product Content End -->
@@ -303,7 +303,7 @@
                                             <img class="secondary-img" src="<?=base_url()?>/public/img/new-products/2_2.webp" alt="single-product">
                                         </a>
                                         <div class="quick-view">
-                                            <a href="index.html#" data-bs-toggle="modal" data-bs-target="#myModal"><i class="pe-7s-look"></i>quick view</a>
+                                            <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#myModal"><i class="pe-7s-look"></i>quick view</a>
                                         </div>
                                         <span class="sticker-new">new</span>
                                     </div>
@@ -313,7 +313,7 @@
                                         <h4><a href="javascript:void(0)">dictum idrisus</a></h4>
                                         <p class="price"><span>$541.99</span></p>
                                         <div class="action-links2">
-                                            <a data-bs-toggle="tooltip" title="Add to Cart" href="cart.html">add to cart</a>
+                                            <a data-bs-toggle="tooltip" title="Add to Cart" href="javascript:void(0)">add to cart</a>
                                         </div>
                                     </div>
                                     <!-- Product Content End -->
@@ -328,7 +328,7 @@
                                             <img class="secondary-img" src="<?=base_url()?>/public/img/new-products/8_2.webp" alt="single-product">
                                         </a>
                                         <div class="quick-view">
-                                            <a href="index.html#" data-bs-toggle="modal" data-bs-target="#myModal"><i class="pe-7s-look"></i>quick view</a>
+                                            <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#myModal"><i class="pe-7s-look"></i>quick view</a>
                                         </div>
                                         <span class="sticker-sale">new</span>
                                     </div>
@@ -338,7 +338,7 @@
                                         <h4><a href="javascript:void(0)">Maple Wood Table</a></h4>
                                         <p class="price"><span>$255</span></p>
                                         <div class="action-links2">
-                                            <a data-bs-toggle="tooltip" title="Add to Cart" href="cart.html">add to cart</a>
+                                            <a data-bs-toggle="tooltip" title="Add to Cart" href="javascript:void(0)">add to cart</a>
                                         </div>
                                     </div>
                                     <!-- Product Content End -->
@@ -357,7 +357,7 @@
                                             <img class="secondary-img" src="<?=base_url()?>/public/img/new-products/2_1.webp" alt="single-product">
                                         </a>
                                         <div class="quick-view">
-                                            <a href="index.html#" data-bs-toggle="modal" data-bs-target="#myModal"><i class="pe-7s-look"></i>quick view</a>
+                                            <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#myModal"><i class="pe-7s-look"></i>quick view</a>
                                         </div>
                                         <span class="sticker-new">new</span>
                                     </div>
@@ -367,7 +367,7 @@
                                         <h4><a href="javascript:void(0)">Decorative Vase</a></h4>
                                         <p class="price"><span>$241.99</span></p>
                                         <div class="action-links2">
-                                            <a data-bs-toggle="tooltip" title="Add to Cart" href="cart.html">add to cart</a>
+                                            <a data-bs-toggle="tooltip" title="Add to Cart" href="javascript:void(0)">add to cart</a>
                                         </div>
                                     </div>
                                     <!-- Product Content End -->
@@ -382,7 +382,7 @@
                                             <img class="secondary-img" src="<?=base_url()?>/public/img/new-products/5_1.webp" alt="single-product">
                                         </a>
                                         <div class="quick-view">
-                                            <a href="index.html#" data-bs-toggle="modal" data-bs-target="#myModal"><i class="pe-7s-look"></i>quick view</a>
+                                            <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#myModal"><i class="pe-7s-look"></i>quick view</a>
                                         </div>
                                         <span class="sticker-new">new</span>
                                     </div>
@@ -392,7 +392,7 @@
                                         <h4><a href="javascript:void(0)">Simplify One Drawer</a></h4>
                                         <p class="price"><span>$117.99</span></p>
                                         <div class="action-links2">
-                                            <a data-bs-toggle="tooltip" title="Add to Cart" href="cart.html">add to cart</a>
+                                            <a data-bs-toggle="tooltip" title="Add to Cart" href="javascript:void(0)">add to cart</a>
                                         </div>
                                     </div>
                                     <!-- Product Content End -->
@@ -418,7 +418,7 @@
                         <div class="single-banner zoom mb-30">
                             <img src="<?=base_url()?>/public/img/products-banner/1.webp" alt="product-banner">
                             <div class="banner-desc">
-                                <a href="categorie-page.html">Decorative Accessories</a>
+                                <a href="javascript:void(0)">Decorative Accessories</a>
                                 <p>25 products</p>
                             </div>
                         </div>
@@ -429,7 +429,7 @@
                         <div class="single-banner zoom mb-30">
                             <img src="<?=base_url()?>/public/img/products-banner/2.webp" alt="product-banner">
                             <div class="banner-desc">
-                                <a href="categorie-page.html">Chairs & Recliners</a>
+                                <a href="javascript:void(0)">Chairs & Recliners</a>
                                 <p>25 products</p>
                             </div>
                         </div>
@@ -440,7 +440,7 @@
                         <div class="single-banner zoom">
                             <img src="<?=base_url()?>/public/img/products-banner/3.webp" alt="product-banner">
                             <div class="banner-desc">
-                                <a href="categorie-page.html">Sofas & Loveseats</a>
+                                <a href="javascript:void(0)">Sofas & Loveseats</a>
                                 <p>25 products</p>
                             </div>
                         </div>
@@ -451,7 +451,7 @@
                         <div class="single-banner zoom">
                             <img src="<?=base_url()?>/public/img/products-banner/4.webp" alt="product-banner">
                             <div class="banner-desc">
-                                <a href="categorie-page.html">Window Treatments</a>
+                                <a href="javascript:void(0)">Window Treatments</a>
                                 <p>25 products</p>
                             </div>
                         </div>
@@ -490,7 +490,7 @@
                                         <img class="secondary-img" src="<?=base_url()?>/public/img/new-products/5_1.webp" alt="single-product">
                                     </a>
                                     <div class="quick-view">
-                                        <a href="index.html#" data-bs-toggle="modal" data-bs-target="#myModal"><i class="pe-7s-look"></i>quick view</a>
+                                        <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#myModal"><i class="pe-7s-look"></i>quick view</a>
                                     </div>
                                     <span class="sticker-new">new</span>
                                 </div>
@@ -500,7 +500,7 @@
                                     <h4><a href="javascript:void(0)">Decorative Vase</a></h4>
                                     <p class="price"><span>$241.99</span></p>
                                     <div class="action-links2">
-                                        <a data-bs-toggle="tooltip" title="Add to Cart" href="cart.html">add to cart</a>
+                                        <a data-bs-toggle="tooltip" title="Add to Cart" href="javascript:void(0)">add to cart</a>
                                     </div>
                                 </div>
                                 <!-- Product Content End -->
@@ -515,7 +515,7 @@
                                         <img class="secondary-img" src="<?=base_url()?>/public/img/new-products/6_2.webp" alt="single-product">
                                     </a>
                                     <div class="quick-view">
-                                        <a href="index.html#" data-bs-toggle="modal" data-bs-target="#myModal"><i class="pe-7s-look"></i>quick view</a>
+                                        <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#myModal"><i class="pe-7s-look"></i>quick view</a>
                                     </div>
                                 </div>
                                 <!-- Product Image End -->
@@ -524,7 +524,7 @@
                                     <h4><a href="javascript:void(0)">Decorative Vase</a></h4>
                                     <p class="price"><span>$241.99</span></p>
                                     <div class="action-links2">
-                                        <a data-bs-toggle="tooltip" title="Add to Cart" href="cart.html">add to cart</a>
+                                        <a data-bs-toggle="tooltip" title="Add to Cart" href="javascript:void(0)">add to cart</a>
                                     </div>
                                 </div>
                                 <!-- Product Content End -->
@@ -539,7 +539,7 @@
                                         <img class="secondary-img" src="<?=base_url()?>/public/img/new-products/2_2.webp" alt="single-product">
                                     </a>
                                     <div class="quick-view">
-                                        <a href="index.html#" data-bs-toggle="modal" data-bs-target="#myModal"><i class="pe-7s-look"></i>quick view</a>
+                                        <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#myModal"><i class="pe-7s-look"></i>quick view</a>
                                     </div>
                                     <span class="sticker-new">new</span>
                                 </div>
@@ -549,7 +549,7 @@
                                     <h4><a href="javascript:void(0)">Decorative Vase</a></h4>
                                     <p class="price"><span>$241.99</span></p>
                                     <div class="action-links2">
-                                        <a data-bs-toggle="tooltip" title="Add to Cart" href="cart.html">add to cart</a>
+                                        <a data-bs-toggle="tooltip" title="Add to Cart" href="javascript:void(0)">add to cart</a>
                                     </div>
                                 </div>
                                 <!-- Product Content End -->
@@ -564,7 +564,7 @@
                                         <img class="secondary-img" src="<?=base_url()?>/public/img/new-products/6_2.webp" alt="single-product">
                                     </a>
                                     <div class="quick-view">
-                                        <a href="index.html#" data-bs-toggle="modal" data-bs-target="#myModal"><i class="pe-7s-look"></i>quick view</a>
+                                        <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#myModal"><i class="pe-7s-look"></i>quick view</a>
                                     </div>
                                     <span class="sticker-new">new</span>
                                 </div>
@@ -574,7 +574,7 @@
                                     <h4><a href="javascript:void(0)">Decorative Vase</a></h4>
                                     <p class="price"><span>$241.99</span></p>
                                     <div class="action-links2">
-                                        <a data-bs-toggle="tooltip" title="Add to Cart" href="cart.html">add to cart</a>
+                                        <a data-bs-toggle="tooltip" title="Add to Cart" href="javascript:void(0)">add to cart</a>
                                     </div>
                                 </div>
                                 <!-- Product Content End -->
@@ -589,7 +589,7 @@
                                         <img class="secondary-img" src="<?=base_url()?>/public/img/new-products/2_2.webp" alt="single-product">
                                     </a>
                                     <div class="quick-view">
-                                        <a href="index.html#" data-bs-toggle="modal" data-bs-target="#myModal"><i class="pe-7s-look"></i>quick view</a>
+                                        <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#myModal"><i class="pe-7s-look"></i>quick view</a>
                                     </div>
                                     <span class="sticker-new">new</span>
                                 </div>
@@ -599,7 +599,7 @@
                                     <h4><a href="javascript:void(0)">Decorative Vase</a></h4>
                                     <p class="price"><span>$241.99</span></p>
                                     <div class="action-links2">
-                                        <a data-bs-toggle="tooltip" title="Add to Cart" href="cart.html">add to cart</a>
+                                        <a data-bs-toggle="tooltip" title="Add to Cart" href="javascript:void(0)">add to cart</a>
                                     </div>
                                 </div>
                                 <!-- Product Content End -->
@@ -614,7 +614,7 @@
                                         <img class="secondary-img" src="<?=base_url()?>/public/img/new-products/3_2.webp" alt="single-product">
                                     </a>
                                     <div class="quick-view">
-                                        <a href="index.html#" data-bs-toggle="modal" data-bs-target="#myModal"><i class="pe-7s-look"></i>quick view</a>
+                                        <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#myModal"><i class="pe-7s-look"></i>quick view</a>
                                     </div>
                                     <span class="sticker-new">new</span>
                                 </div>
@@ -624,7 +624,7 @@
                                     <h4><a href="javascript:void(0)">Decorative Vase</a></h4>
                                     <p class="price"><span>$241.99</span></p>
                                     <div class="action-links2">
-                                        <a data-bs-toggle="tooltip" title="Add to Cart" href="cart.html">add to cart</a>
+                                        <a data-bs-toggle="tooltip" title="Add to Cart" href="javascript:void(0)">add to cart</a>
                                     </div>
                                 </div>
                                 <!-- Product Content End -->
@@ -632,7 +632,7 @@
                             <!-- Single Product End -->
                         </div>
                         <!-- Best Seller Product Activation Start -->
-                        <div class="text-center shop-link-page mt-50"><a href="best-seller.html">Shop All Best Sellers</a></div>
+                        <div class="text-center shop-link-page mt-50"><a href="javascript:void(0)">Shop All Best Sellers</a></div>
                     </div>
                 </div>
                 <!-- Row End -->
@@ -689,22 +689,22 @@
                                             <div class="product-thumbnail mt-15 mb-20">
                                                 <div class="thumb-menu nav owl-carousel">
                                                     <div>
-                                                        <a class="active" data-bs-toggle="tab" href="index.html#thumb1"> <img src="<?=base_url()?>/public/img/new-products/1_1.webp" alt="product-thumbnail"></a>
+                                                        <a class="active" data-bs-toggle="tab" href="javascript:void(0)"> <img src="<?=base_url()?>/public/img/new-products/1_1.webp" alt="product-thumbnail"></a>
                                                     </div>
                                                     <div>
-                                                        <a data-bs-toggle="tab" href="index.html#thumb2"> <img src="<?=base_url()?>/public/img/new-products/1_2.webp" alt="product-thumbnail"></a>
+                                                        <a data-bs-toggle="tab" href="javascript:void(0)"> <img src="<?=base_url()?>/public/img/new-products/1_2.webp" alt="product-thumbnail"></a>
                                                     </div>
                                                     <div>
-                                                        <a data-bs-toggle="tab" href="index.html#thumb3"> <img src="<?=base_url()?>/public/img/new-products/2_1.webp" alt="product-thumbnail"></a>
+                                                        <a data-bs-toggle="tab" href="javascript:void(0)"> <img src="<?=base_url()?>/public/img/new-products/2_1.webp" alt="product-thumbnail"></a>
                                                     </div>
                                                     <div>
-                                                        <a data-bs-toggle="tab" href="index.html#thumb4"> <img src="<?=base_url()?>/public/img/new-products/2_2.webp" alt="product-thumbnail"></a>
+                                                        <a data-bs-toggle="tab" href="javascript:void(0)"> <img src="<?=base_url()?>/public/img/new-products/2_2.webp" alt="product-thumbnail"></a>
                                                     </div>
                                                     <div>
-                                                        <a data-bs-toggle="tab" href="index.html#thumb5"> <img src="<?=base_url()?>/public/img/new-products/3_1.webp" alt="product-thumbnail"></a>
+                                                        <a data-bs-toggle="tab" href="javascript:void(0)"> <img src="<?=base_url()?>/public/img/new-products/3_1.webp" alt="product-thumbnail"></a>
                                                     </div>
                                                     <div>
-                                                        <a data-bs-toggle="tab" href="index.html#thumb6"> <img src="<?=base_url()?>/public/img/new-products/3_2.webp" alt="product-thumbnail"></a>
+                                                        <a data-bs-toggle="tab" href="javascript:void(0)"> <img src="<?=base_url()?>/public/img/new-products/3_2.webp" alt="product-thumbnail"></a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -724,8 +724,8 @@
                                                         <i class="fa fa-star-o"></i>
                                                     </div>
                                                     <div class="rating-feedback f-left">
-                                                        <a href="index.html#">0 reviews</a> /
-                                                        <a href="index.html#">Write a review</a>
+                                                        <a href="javascript:void(0)">0 reviews</a> /
+                                                        <a href="javascript:void(0)">Write a review</a>
                                                     </div>
                                                 </div>
                                                 <!-- Product Rating End -->
