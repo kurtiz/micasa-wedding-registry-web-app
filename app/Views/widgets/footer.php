@@ -32,7 +32,7 @@
                             <p class="mb-25">Subscribe to our newsletter and get updated on our discounts</p>
                             <div class="subscribe-box">
                                 <form action="#">
-                                    <input type="text" name="subscribe_email" id="subscribe_email" placeholder="Enter you email address here...">
+                                    <input type="email" name="subscribe_email" id="subscribe_email" required placeholder="Enter you email address here...">
                                     <input type="submit" class="submit" value="subscribe">
                                 </form>
                             </div>

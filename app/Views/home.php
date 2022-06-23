@@ -13,33 +13,7 @@
         <meta name="keywords" content="E-commerce registry wedding wed gift family " />
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- place favicon.ico in the root directory -->
-        <link rel="shortcut icon" type="image/x-icon" href="<?=base_url()?>/public/favicon.ico">
-        <!-- mobile menu css -->
-        <link rel="stylesheet" href="<?=base_url()?>/public/css/meanmenu.min.css">
-        <!-- animate css -->
-        <link rel="stylesheet" href="<?=base_url()?>/public/css/animate.min.css">
-        <!-- nivo slider css -->
-        <link rel="stylesheet" href="<?=base_url()?>/public/css/nivo-slider.css">
-        <!-- owl carousel css -->
-        <link rel="stylesheet" href="<?=base_url()?>/public/css/owl.carousel.min.css">
-        <!-- price slider css -->
-        <link rel="stylesheet" href="<?=base_url()?>/public/css/jquery-ui.min.css">
-        <!-- fontawesome css -->
-        <link rel="stylesheet" href="<?=base_url()?>/public/css/font-awesome.min.css">
-        <!-- icon font pack css -->
-        <link rel="stylesheet" href="<?=base_url()?>/public/css/pe-icon-7-stroke.css">
-        <!-- bootstrap css -->
-        <link rel="stylesheet" href="<?=base_url()?>/public/css/bootstrap.min.css">
-        <!-- default css  -->
-        <link rel="stylesheet" href="<?=base_url()?>/public/css/default.css">
-        <!-- style css -->
-        <link rel="stylesheet" href="<?=base_url()?>/public/style.css">
-        <!-- responsive css -->
-        <link rel="stylesheet" href="<?=base_url()?>/public/css/responsive.css">
-
-        <!-- modernizr js -->
-        <script src="<?=base_url()?>/public/js/vendor/modernizr-3.11.2.min.js"></script>
-        <script src="<?=base_url()?>/public/js/lottie/lottie-player.js"></script>
+        <?= $this->include("widgets/css"); ?>
     </head>
 
     <body>
@@ -785,29 +759,7 @@
     </div>
     <!-- Wrapper End -->
     <!-- jquery 3.12.4 -->
-    <script src="<?=base_url()?>/public/js/vendor/jquery-3.6.0.min.js"></script>
-    <script src="<?=base_url()?>/public/js/vendor/jquery-migrate-3.3.2.min.js"></script>
-    <!-- mobile menu js  -->
-    <script src="<?=base_url()?>/public/js/jquery.meanmenu.min.js"></script>
-    <!-- scroll-up js -->
-    <script src="<?=base_url()?>/public/js/jquery.scrollUp.js"></script>
-    <!-- owl-carousel js -->
-    <script src="<?=base_url()?>/public/js/owl.carousel.min.js"></script>
-    <!-- wow js -->
-    <script src="<?=base_url()?>/public/js/wow.min.js"></script>
-    <!-- price slider js -->
-    <script src="<?=base_url()?>/public/js/jquery-ui.min.js"></script>
-    <!-- elevateZoom js -->
-    <script src="<?=base_url()?>/public/js/jquery.elevateZoom-3.0.8.min.js"></script>
-    <!-- nivo slider js -->
-    <script src="<?=base_url()?>/public/js/jquery.nivo.slider.js"></script>
-    <!-- bootstrap -->
-    <script src="<?=base_url()?>/public/js/bootstrap.bundle.min.js"></script>
-    <!-- plugins -->
-    <script src="<?=base_url()?>/public/js/plugins.js"></script>
-    <!-- main js -->
-    <script src="<?=base_url()?>/public/js/main.js"></script>
+    <?= $this->include("widgets/javascript"); ?>
     </body>
-
     </html>
 <?= $this->endSection(); ?>

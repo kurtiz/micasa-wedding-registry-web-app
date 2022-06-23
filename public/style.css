@@ -3209,7 +3209,7 @@ legend {
 .customer-btn,
 .return-customer-btn {
     background: transparent;
-    color: #1a1a1a;
+    color: #e24646;
     text-align: center;
 }
 
@@ -3225,8 +3225,8 @@ legend {
 .newsletter-btn:hover,
 .customer-btn:hover,
 .return-customer-btn:hover {
-    background: #1a1a1a;
-    color: #fff;
+    background: #e24646;
+    color: #fffce0;
 }
 
 .log-in .well {
