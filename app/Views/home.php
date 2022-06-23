@@ -1,3 +1,7 @@
+<?= $this->extend("layouts/base"); ?>
+<!-- NOTE This keeps this page in the "content" placeholder in the layouts/base.php file  -->
+<?= $this->section("content"); ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -322,3 +326,4 @@
 
 </body>
 </html>
+<?= $this->endSection(); ?>
