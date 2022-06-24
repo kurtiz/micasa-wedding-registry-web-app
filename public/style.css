@@ -291,7 +291,7 @@ input#newsletter-permission {
 .home-2 .header-sticky.sticky {
     top: 0;
     position: fixed;
-    background: #fffce0;
+    background: #fff;
     right: 0;
     left: 0;
     z-index: 1049;
@@ -351,7 +351,7 @@ input#newsletter-permission {
 
 .ht-dropdown {
     padding: 20px;
-    background: #fffce0;
+    background: #fff;
     left: 0;
     opacity: 0;
     position: absolute;
@@ -815,12 +815,12 @@ ul.pull-left.home-4-search i {
 }
 
 .slider-text a {
-    border: 1px solid #e24646;
+    border: 1px solid #1a1a1a;
     background: transparent;
     padding: 13px 40px;
     text-transform: uppercase;
     font-size: 14px;
-    color: #e24646;
+    color: #1a1a1a;
     display: inline-block;
     font-weight: 600;
     border-radius: 0;
@@ -831,6 +831,7 @@ ul.pull-left.home-4-search i {
 .home-2 .slider-text a:hover {
     color: #fffce0;
     background: #e24646;
+    border: 1px solid #e24646;
 }
 
 /* -- slider nav css -- */
