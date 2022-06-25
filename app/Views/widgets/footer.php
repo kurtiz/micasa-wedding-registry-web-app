@@ -14,12 +14,12 @@
                     </div>
                     <div class="single-footer col-lg-6 col-md-6">
                         <div class="footer-content">
-                            <p>We deliver the best quality.</p>
+                            <?php /* <p>We deliver the best quality.</p> */?>
                             <h5 class="contact-info mtb-10">contact info:</h5>
                             <ul class="footer-list first-content">
-                                <li><i class="pe-7s-map-marker"></i>Address will be here</li>
-                                <li><i class="pe-7s-mail"></i>your-email@example.com</li>
-                                <li><i class="pe-7s-call"></i>+00 123 45678</li>
+                                <li><i class="pe-7s-map-marker"></i>55 Lagos Avenue, <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Accra, Ghana</li>
+                                <li><i class="pe-7s-mail"></i>micasaghana@gmail.com</li>
+                                <li><i class="pe-7s-call"></i>+233 55 609 8900</li>
                             </ul>
                         </div>
                     </div>

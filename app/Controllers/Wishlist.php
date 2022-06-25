@@ -7,6 +7,6 @@ use CodeIgniter\Controller;
 class Wishlist extends Controller {
 
     public function index(){
-        return view("wishlist");
+        return view("home");
     }
 }

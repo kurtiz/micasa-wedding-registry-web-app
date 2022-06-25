@@ -52,274 +52,135 @@
         <?= $this->include("widgets/header"); ?>
         <!-- Header Area End -->
         <!-- Slider Area Start -->
-        <div class="slider-area pb-100">
+        <div class="slider-area pb-10">
             <!-- Main Slider Area Start -->
             <div class="slider-wrapper theme-default">
                 <!-- Slider Background  Image Start-->
                 <div id="slider" class="nivoSlider">
-                    <img src="<?=base_url()?>/public/img/slider/1.jpg" data-thumb="img/slider/1.jpg" alt="" title="#htmlcaption" />
-                    <img src="<?=base_url()?>/public/img/slider/2.jpg" data-thumb="img/slider/2.jpg" alt="" title="#htmlcaption2" />
+                    <img src="<?=base_url()?>/public/img/slider/AOA.png" data-thumb="img/slider/AOA.png" alt="" title="#htmlcaption" />
                 </div>
                 <!-- Slider Background  Image Start-->
-                <!-- Slider htmlcaption Start-->
-                <div id="htmlcaption" class="nivo-html-caption slider-caption">
-                    <!-- Slider Text Start -->
-                    <div class="slider-text">
-                        <h2 class="wow fadeInLeft" data-wow-delay="1s">Kwaku & Ohemaa’s <br> Wedding Registry</h2>
-                        <p class="wow fadeInRight" data-wow-delay="1s"></p>
-                        <a class="wow bounceInDown" data-wow-delay="0.8s" href="javascript:scrollToDiv('registry-banner')">Get Started</a>
-                    </div>
-                    <!-- Slider Text End -->
-                </div>
-                <!-- Slider htmlcaption End -->
-                <!-- Slider htmlcaption Start -->
-                <div id="htmlcaption2" class="nivo-html-caption slider-caption">
-                    <!-- Slider Text Start -->
-                    <div class="slider-text">
-                        <h2 class="wow fadeInLeft" data-wow-delay="1s">Kwaku & Ohemaa’s <br> Wedding Registry</h2>
-                        <p class="wow fadeInRight" data-wow-delay="1s"></p>
-                        <a class="wow bounceInDown" data-wow-delay="0.8s" href="javascript:scrollToDiv('registry-banner')">Get Started</a>
-                    </div>
-                    <!-- Slider Text End -->
-                </div>
-                <!-- Slider htmlcaption End -->
+
             </div>
             <!-- Main Slider Area End -->
         </div>
         <!-- Slider Area End -->
         <!-- New Products Selection Start -->
         <div id="registry" class="new-products-selection pb-80">
-            <div class="container">
+            <div class="">
                 <div id="registry-banner" class="row">
                     <!-- Section Title Start -->
                     <div class="col-12">
                         <div class="section-title text-center mb-40">
-                            <span class="section-desc mb-15">Kwaku & Ohemaa’s</span>
-                            <h3 class="section-info">Wedding Registry</h3>
+                            <span class="section-desc mb-15">Wedding Registry</span>
                         </div>
                     </div>
                     <!-- Section Title End -->
                 </div>
-                <div class="row">
-                    <div class="col-12">
+                <div class="row px-1 mb-10">
+                    <div class="col-6 px-1">
                         <!-- New Products Activation Start -->
-                        <div class="new-products owl-carousel">
-                            <!-- Double Product Start -->
-                            <div class="double-products">
-                                <!-- Single Product Start -->
-                                <div class="single-product mb-25">
-                                    <!-- Product Image Start -->
-                                    <div class="pro-img">
-                                        <a href="javascript:void(0)">
-                                            <img class="primary-img" src="<?=base_url()?>/public/img/new-products/2_1.webp" alt="single-product">
-                                            <img class="secondary-img" src="<?=base_url()?>/public/img/new-products/2_2.webp" alt="single-product">
-                                        </a>
-                                        <div class="quick-view">
-                                            <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#myModal"><i class="pe-7s-look"></i>quick view</a>
-                                        </div>
-                                        <span class="sticker-new">new</span>
-                                    </div>
-                                    <!-- Product Image End -->
-                                    <!-- Product Content Start -->
-                                    <div class="pro-content text-center">
-                                        <h4><a href="javascript:void(0)">Carte Postal Clock</a></h4>
-                                        <p class="price"><span>$2000</span></p>
-                                        <div class="action-links2">
-                                            <a data-bs-toggle="tooltip" title="Add to Cart" href="javascript:void(0)">add to cart</a>
-                                        </div>
-                                    </div>
-                                    <!-- Product Content End -->
+                        <div class="single-product">
+                            <!-- Product Image Start -->
+                            <div class="pro-img">
+                                <a href="javascript:void(0)">
+                                    <img class="primary-img" src="<?=base_url()?>/public/img/new-products/2_1.webp" alt="single-product">
+                                </a>
+                                <div class="quick-view" style="background: grey">
+                                    <a href="javascript:void(0)"  data-bs-toggle="modal" data-bs-target="#myModal"><i class="pe-7s-look"></i>quick view</a>
                                 </div>
-                                <!-- Single Product End -->
-                                <!-- Single Product Start -->
-                                <div class="single-product">
-                                    <!-- Product Image Start -->
-                                    <div class="pro-img">
-                                        <a href="javascript:void(0)">
-                                            <img class="primary-img" src="<?=base_url()?>/public/img/new-products/6_1.webp" alt="single-product">
-                                            <img class="secondary-img" src="<?=base_url()?>/public/img/new-products/6_2.webp" alt="single-product">
-                                        </a>
-                                        <div class="quick-view">
-                                            <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#myModal"><i class="pe-7s-look"></i>quick view</a>
-                                        </div>
-                                        <span class="sticker-new">new</span>
-                                    </div>
-                                    <!-- Product Image End -->
-                                    <!-- Product Content Start -->
-                                    <div class="pro-content text-center">
-                                        <h4><a href="javascript:void(0)">Nulla massa est</a></h4>
-                                        <p class="price"><span>$602</span></p>
-                                        <div class="action-links2">
-                                            <a data-bs-toggle="tooltip" title="Add to Cart" href="javascript:void(0)">add to cart</a>
-                                        </div>
-                                    </div>
-                                    <!-- Product Content End -->
-                                </div>
-                                <!-- Single Product End -->
                             </div>
-                            <!-- Double Product End -->
-                            <!-- Double Product Start -->
-                            <div class="double-products">
-                                <!-- Single Product Start -->
-                                <div class="single-product mb-25">
-                                    <!-- Product Image Start -->
-                                    <div class="pro-img">
-                                        <a href="javascript:void(0)">
-                                            <img class="primary-img" src="<?=base_url()?>/public/img/new-products/3_1.webp" alt="single-product">
-                                            <img class="secondary-img" src="<?=base_url()?>/public/img/new-products/3_2.webp" alt="single-product">
-                                        </a>
-                                        <div class="quick-view">
-                                            <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#myModal"><i class="pe-7s-look"></i>quick view</a>
-                                        </div>
-                                        <span class="sticker-new">new</span>
-                                    </div>
-                                    <!-- Product Image End -->
-                                    <!-- Product Content Start -->
-                                    <div class="pro-content text-center">
-                                        <h4><a href="javascript:void(0)">congue sitamet</a></h4>
-                                        <p class="price"><span>$241.99</span></p>
-                                        <div class="action-links2">
-                                            <a data-bs-toggle="tooltip" title="Add to Cart" href="javascript:void(0)">add to cart</a>
-                                        </div>
-                                    </div>
-                                    <!-- Product Content End -->
+                            <!-- Product Image End -->
+                            <!-- Product Content Start -->
+                            <div class="pro-content text-center">
+                                <h4><a href="javascript:void(0)">Carte Postal Clock</a></h4>
+                                <p class="price"><span>$2000</span></p>
+                                <div class="action-links2 quick-view">
+                                    <a data-bs-toggle="tooltip" style="color: #fffce0" title="Add to Cart" href="javascript:void(0)">add to cart</a>
                                 </div>
-                                <!-- Single Product End -->
-                                <!-- Single Product Start -->
-                                <div class="single-product">
-                                    <!-- Product Image Start -->
-                                    <div class="pro-img">
-                                        <a href="javascript:void(0)">
-                                            <img class="primary-img" src="<?=base_url()?>/public/img/new-products/5_1.webp" alt="single-product">
-                                            <img class="secondary-img" src="<?=base_url()?>/public/img/new-products/4_1.webp" alt="single-product">
-                                        </a>
-                                        <div class="quick-view">
-                                            <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#myModal"><i class="pe-7s-look"></i>quick view</a>
-                                        </div>
-                                        <span class="sticker-new">new</span>
-                                    </div>
-                                    <!-- Product Image End -->
-                                    <!-- Product Content Start -->
-                                    <div class="pro-content text-center">
-                                        <h4><a href="javascript:void(0)">Splacerat volutpat</a></h4>
-                                        <p class="price"><span>$122.99</span></p>
-                                        <div class="action-links2">
-                                            <a data-bs-toggle="tooltip" title="Add to Cart" href="javascript:void(0)">add to cart</a>
-                                        </div>
-                                    </div>
-                                    <!-- Product Content End -->
-                                </div>
-                                <!-- Single Product End -->
                             </div>
-                            <!-- Double Product End -->
-                            <!-- Double Product Start -->
-                            <div class="double-products">
-                                <!-- Single Product Start -->
-                                <div class="single-product mb-25">
-                                    <!-- Product Image Start -->
-                                    <div class="pro-img">
-                                        <a href="javascript:void(0)">
-                                            <img class="primary-img" src="<?=base_url()?>/public/img/new-products/4_1.webp" alt="single-product">
-                                            <img class="secondary-img" src="<?=base_url()?>/public/img/new-products/2_2.webp" alt="single-product">
-                                        </a>
-                                        <div class="quick-view">
-                                            <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#myModal"><i class="pe-7s-look"></i>quick view</a>
-                                        </div>
-                                        <span class="sticker-new">new</span>
-                                    </div>
-                                    <!-- Product Image End -->
-                                    <!-- Product Content Start -->
-                                    <div class="pro-content text-center">
-                                        <h4><a href="javascript:void(0)">dictum idrisus</a></h4>
-                                        <p class="price"><span>$541.99</span></p>
-                                        <div class="action-links2">
-                                            <a data-bs-toggle="tooltip" title="Add to Cart" href="javascript:void(0)">add to cart</a>
-                                        </div>
-                                    </div>
-                                    <!-- Product Content End -->
+                            <!-- Product Content End -->
+                        </div>
+                        <!-- New Products Activation End -->
+                    </div>
+                    <div class="col-6 px-1">
+                        <!-- New Products Activation Start -->
+                        <div class="single-product">
+                            <!-- Product Image Start -->
+                            <div class="pro-img">
+                                <a href="javascript:void(0)">
+                                    <img class="primary-img" src="<?=base_url()?>/public/img/new-products/6_1.webp" alt="single-product">
+                                </a>
+                                <div class="quick-view" style="background: grey">
+                                    <a href="javascript:void(0)"  data-bs-toggle="modal" data-bs-target="#myModal"><i class="pe-7s-look"></i>quick view</a>
                                 </div>
-                                <!-- Single Product End -->
-                                <!-- Single Product Start -->
-                                <div class="single-product">
-                                    <!-- Product Image Start -->
-                                    <div class="pro-img">
-                                        <a href="javascript:void(0)">
-                                            <img class="primary-img" src="<?=base_url()?>/public/img/new-products/8_1.webp" alt="single-product">
-                                            <img class="secondary-img" src="<?=base_url()?>/public/img/new-products/8_2.webp" alt="single-product">
-                                        </a>
-                                        <div class="quick-view">
-                                            <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#myModal"><i class="pe-7s-look"></i>quick view</a>
-                                        </div>
-                                        <span class="sticker-sale">new</span>
-                                    </div>
-                                    <!-- Product Image End -->
-                                    <!-- Product Content Start -->
-                                    <div class="pro-content text-center">
-                                        <h4><a href="javascript:void(0)">Maple Wood Table</a></h4>
-                                        <p class="price"><span>$255</span></p>
-                                        <div class="action-links2">
-                                            <a data-bs-toggle="tooltip" title="Add to Cart" href="javascript:void(0)">add to cart</a>
-                                        </div>
-                                    </div>
-                                    <!-- Product Content End -->
-                                </div>
-                                <!-- Single Product End -->
                             </div>
-                            <!-- Double Product End -->
-                            <!-- Double Product Start -->
-                            <div class="double-products">
-                                <!-- Single Product Start -->
-                                <div class="single-product mb-25">
-                                    <!-- Product Image Start -->
-                                    <div class="pro-img">
-                                        <a href="javascript:void(0)">
-                                            <img class="primary-img" src="<?=base_url()?>/public/img/new-products/2_2.webp" alt="single-product">
-                                            <img class="secondary-img" src="<?=base_url()?>/public/img/new-products/2_1.webp" alt="single-product">
-                                        </a>
-                                        <div class="quick-view">
-                                            <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#myModal"><i class="pe-7s-look"></i>quick view</a>
-                                        </div>
-                                        <span class="sticker-new">new</span>
-                                    </div>
-                                    <!-- Product Image End -->
-                                    <!-- Product Content Start -->
-                                    <div class="pro-content text-center">
-                                        <h4><a href="javascript:void(0)">Decorative Vase</a></h4>
-                                        <p class="price"><span>$241.99</span></p>
-                                        <div class="action-links2">
-                                            <a data-bs-toggle="tooltip" title="Add to Cart" href="javascript:void(0)">add to cart</a>
-                                        </div>
-                                    </div>
-                                    <!-- Product Content End -->
+                            <!-- Product Image End -->
+                            <!-- Product Content Start -->
+                            <div class="pro-content text-center">
+                                <h4><a href="javascript:void(0)">Nulla massa est</a></h4>
+                                <p class="price"><span>$602</span></p>
+                                <div class="action-links2 quick-view">
+                                    <a data-bs-toggle="tooltip" style="color: #fffce0" title="Add to Cart" href="javascript:void(0)">add to cart</a>
                                 </div>
-                                <!-- Single Product End -->
-                                <!-- Single Product Start -->
-                                <div class="single-product">
-                                    <!-- Product Image Start -->
-                                    <div class="pro-img">
-                                        <a href="javascript:void(0)">
-                                            <img class="primary-img" src="<?=base_url()?>/public/img/new-products/9_1.webp" alt="single-product">
-                                            <img class="secondary-img" src="<?=base_url()?>/public/img/new-products/5_1.webp" alt="single-product">
-                                        </a>
-                                        <div class="quick-view">
-                                            <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#myModal"><i class="pe-7s-look"></i>quick view</a>
-                                        </div>
-                                        <span class="sticker-new">new</span>
-                                    </div>
-                                    <!-- Product Image End -->
-                                    <!-- Product Content Start -->
-                                    <div class="pro-content text-center">
-                                        <h4><a href="javascript:void(0)">Simplify One Drawer</a></h4>
-                                        <p class="price"><span>$117.99</span></p>
-                                        <div class="action-links2">
-                                            <a data-bs-toggle="tooltip" title="Add to Cart" href="javascript:void(0)">add to cart</a>
-                                        </div>
-                                    </div>
-                                    <!-- Product Content End -->
-                                </div>
-                                <!-- Single Product End -->
                             </div>
-                            <!-- Double Product End -->
+                            <!-- Product Content End -->
+                        </div>
+                        <!-- New Products Activation End -->
+                    </div>
+                </div>
+
+                <div class="row px-1 mb-10">
+                    <div class="col-6 px-1">
+                        <!-- New Products Activation Start -->
+                        <div class="single-product">
+                            <!-- Product Image Start -->
+                            <div class="pro-img">
+                                <a href="javascript:void(0)">
+                                    <img class="primary-img" src="<?=base_url()?>/public/img/new-products/2_1.webp" alt="single-product">
+                                </a>
+                                <div class="quick-view" style="background: grey">
+                                    <a href="javascript:void(0)"  data-bs-toggle="modal" data-bs-target="#myModal"><i class="pe-7s-look"></i>quick view</a>
+                                </div>
+                                <div class="quick-view" style="background: grey">
+                                    <a href="javascript:void(0)"  data-bs-toggle="modal" data-bs-target="#myModal"><i class="pe-7s-look"></i>quick view</a>
+                                </div>
+                            </div>
+                            <!-- Product Image End -->
+                            <!-- Product Content Start -->
+                            <div class="pro-content text-center">
+                                <h4><a href="javascript:void(0)">Carte Postal Clock</a></h4>
+                                <p class="price"><span>$2000</span></p>
+                                <div class="action-links2 quick-view">
+                                    <a data-bs-toggle="tooltip" style="color: #fffce0" title="Add to Cart" href="javascript:void(0)">add to cart</a>
+                                </div>
+                            </div>
+                            <!-- Product Content End -->
+                        </div>
+                        <!-- New Products Activation End -->
+                    </div>
+                    <div class="col-6 px-1">
+                        <!-- New Products Activation Start -->
+                        <div class="single-product">
+                            <!-- Product Image Start -->
+                            <div class="pro-img">
+                                <a href="javascript:void(0)">
+                                    <img class="primary-img" src="<?=base_url()?>/public/img/new-products/6_1.webp" alt="single-product">
+                                </a>
+                                <div class="quick-view" style="background: grey">
+                                    <a href="javascript:void(0)"  data-bs-toggle="modal" data-bs-target="#myModal"><i class="pe-7s-look"></i>quick view</a>
+                                </div>
+                            </div>
+                            <!-- Product Image End -->
+                            <!-- Product Content Start -->
+                            <div class="pro-content text-center">
+                                <h4><a href="javascript:void(0)">Nulla massa est</a></h4>
+                                <p class="price"><span>$602</span></p>
+                                <div class="action-links2 quick-view">
+                                    <a data-bs-toggle="tooltip" style="color: #fffce0" title="Add to Cart" href="javascript:void(0)">add to cart</a>
+                                </div>
+                            </div>
+                            <!-- Product Content End -->
                         </div>
                         <!-- New Products Activation End -->
                     </div>
@@ -385,22 +246,22 @@
                                             <div class="product-thumbnail mt-15 mb-20">
                                                 <div class="thumb-menu nav owl-carousel">
                                                     <div>
-                                                        <a class="active" data-bs-toggle="tab" href="javascript:void(0)"> <img src="<?=base_url()?>/public/img/new-products/1_1.webp" alt="product-thumbnail"></a>
+                                                        <a class="active" data-bs-toggle="tab" href="<?=base_url()?>#thumb1"> <img src="<?=base_url()?>/public/img/new-products/1_1.webp" alt="product-thumbnail"></a>
                                                     </div>
                                                     <div>
-                                                        <a data-bs-toggle="tab" href="javascript:void(0)"> <img src="<?=base_url()?>/public/img/new-products/1_2.webp" alt="product-thumbnail"></a>
+                                                        <a data-bs-toggle="tab" href="<?=base_url()?>#thumb2"> <img src="<?=base_url()?>/public/img/new-products/1_2.webp" alt="product-thumbnail"></a>
                                                     </div>
                                                     <div>
-                                                        <a data-bs-toggle="tab" href="javascript:void(0)"> <img src="<?=base_url()?>/public/img/new-products/2_1.webp" alt="product-thumbnail"></a>
+                                                        <a data-bs-toggle="tab" href="<?=base_url()?>#thumb3"> <img src="<?=base_url()?>/public/img/new-products/2_1.webp" alt="product-thumbnail"></a>
                                                     </div>
                                                     <div>
-                                                        <a data-bs-toggle="tab" href="javascript:void(0)"> <img src="<?=base_url()?>/public/img/new-products/2_2.webp" alt="product-thumbnail"></a>
+                                                        <a data-bs-toggle="tab" href="<?=base_url()?>#thumb4"> <img src="<?=base_url()?>/public/img/new-products/2_2.webp" alt="product-thumbnail"></a>
                                                     </div>
                                                     <div>
-                                                        <a data-bs-toggle="tab" href="javascript:void(0)"> <img src="<?=base_url()?>/public/img/new-products/3_1.webp" alt="product-thumbnail"></a>
+                                                        <a data-bs-toggle="tab" href="<?=base_url()?>#thumb5"> <img src="<?=base_url()?>/public/img/new-products/3_1.webp" alt="product-thumbnail"></a>
                                                     </div>
                                                     <div>
-                                                        <a data-bs-toggle="tab" href="javascript:void(0)"> <img src="<?=base_url()?>/public/img/new-products/3_2.webp" alt="product-thumbnail"></a>
+                                                        <a data-bs-toggle="tab" href="<?=base_url()?>#thumb6"> <img src="<?=base_url()?>/public/img/new-products/3_2.webp" alt="product-thumbnail"></a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -411,25 +272,11 @@
                                         <div class="col-lg-7 col-md-6">
                                             <div class="thubnail-desc fix">
                                                 <h2 class="product-header">Sheepskin Pillow2</h2>
-                                                <!-- Product Rating Start -->
-                                                <div class="rating-summary fix mtb-25">
-                                                    <div class="rating f-left mr-10">
-                                                        <i class="fa fa-star-o"></i>
-                                                        <i class="fa fa-star-o"></i>
-                                                        <i class="fa fa-star-o"></i>
-                                                        <i class="fa fa-star-o"></i>
-                                                    </div>
-                                                    <div class="rating-feedback f-left">
-                                                        <a href="javascript:void(0)">0 reviews</a> /
-                                                        <a href="javascript:void(0)">Write a review</a>
-                                                    </div>
-                                                </div>
                                                 <!-- Product Rating End -->
                                                 <!-- Product Price Start -->
                                                 <div class="pro-price mb-15">
                                                     <ul class="pro-price-list">
                                                         <li class="price">$241.99</li>
-                                                        <li class="tax">Ex Tax: $199.99</li>
                                                     </ul>
                                                 </div>
                                                 <!-- Product Price End -->
@@ -438,7 +285,6 @@
                                                     <ul class="pro-desc-list">
                                                         <li>Product Code: <span>SAMI</span></li>
                                                         <li>Reward Points: <span>1000</span></li>
-                                                        <li>Availability: <span>in Stock</span></li>
                                                     </ul>
                                                 </div>
                                                 <!-- Product Price Description End -->
@@ -455,8 +301,6 @@
                                                 <!-- Product Button Actions Start -->
                                                 <div class="product-button-actions">
                                                     <button class="add-to-cart">add to cart</button>
-                                                    <button data-bs-toggle="tooltip" title="Add to Wishlist" class="same-btn mr-15"><i class="pe-7s-like"></i></button>
-                                                    <button data-bs-toggle="tooltip" title="Compare this Product" class="same-btn"><i class="pe-7s-repeat"></i></button>
                                                 </div>
                                                 <!-- Product Button Actions End -->
                                             </div>
@@ -482,14 +326,6 @@
     <!-- Wrapper End -->
     <!-- jquery 3.12.4 -->
     <?= $this->include("widgets/javascript"); ?>
-
-    <script type="text/javascript">
-        function scrollToDiv(id) {
-            document.getElementById(id).scrollIntoView(true);
-            // console.log(position);
-            // document.getElementById('divimg').scrollTop = position + 50;
-        }
-    </script>
     </body>
     </html>
 <?= $this->endSection(); ?>
