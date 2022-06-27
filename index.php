@@ -9,7 +9,11 @@ if (phpversion() < $minPHPVersion)
 unset($minPHPVersion);
 
 // Path to the front controller (this file)
-define('FCPATH', __DIR__ . DIRECTORY_SEPARATOR);
+const FCPATH = __DIR__ . DIRECTORY_SEPARATOR;
+
+const STORE_ID = "benney5fd19d133eedd_202012121653335fd549ed9b014";
+const ADMIN_URL = "http://localhost/micasa-admin";
+//const ADMIN_URL = "https://admin.ourtechnologies.org";
 
 // Location of the Paths config file.
 // This is the line that might need to be changed, depending on your folder structure.

@@ -19,6 +19,7 @@
 <link rel="stylesheet" href="<?=base_url()?>/public/css/default.css">
 <!-- style css -->
 <link rel="stylesheet" href="<?=base_url()?>/public/style.css">
+<link rel="stylesheet" href="<?=base_url()?>/public/js/vendor/jquery-toast-plugin/dist/jquery.toast.min.css">
 <!-- responsive css -->
 <link rel="stylesheet" href="<?=base_url()?>/public/css/responsive.css">
 
