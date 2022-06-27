@@ -5,8 +5,8 @@
             <div class="col-lg-2 col-5 col-full-xs">
                 <div class="logo">
                     <a href="<?= base_url() ?>">
-<!--                        <img src="--><?//=base_url()?><!--/public/img/logo/logo.webp" alt="brand-image">-->
-                        <h1><strong style="color: #e24646">MiCasa</strong></h1>
+                        <img src="<?=base_url()?>/public/img/logo/logo.svg" style="height:50px" alt="brand-image">
+<!--                        <h1><strong style="color: #e24646">MiCasa</strong></h1>-->
                     </a>
                 </div>
             </div>
@@ -22,13 +22,7 @@
                                 <a href="#">Home</a>
                             </li>
                             <li>
-                                <a href="<?= base_url() ?>/shop">Shop</a>
-                            </li>
-                            <li>
                                 <a href="<?= base_url() ?>/contact">Contact Us</a>
-                            </li>
-                            <li>
-                                <a href="<?= base_url() ?>/about">about us</a>
                             </li>
                         </ul>
                     </nav>
@@ -44,7 +38,7 @@
 
                         </li>
                         <!-- Search Box End -->
-                        <li><a href="wish-list.html"><i class="pe-7s-like"></i><span style="display: none">2</span></a></li>
+<!--                        <li><a href="--><?//=base_url();?><!--/wishlist"><i class="pe-7s-like"></i><span style="display: none">2</span></a></li>-->
                         <li><i class="pe-7s-shopbag"></i><span style="display: none">2</span>
                             <ul class="ht-dropdown main-cart-box">
                                 <li>
@@ -93,7 +87,7 @@
                                         <li>$ US Dollar</li>
                                     </ul>
                                 </li>
-                                <li>
+                               <?php /* <li>
                                     <h3>my account</h3>
                                     <ul>
                                         <li><a href="<?= base_url() ?>/register">
@@ -105,7 +99,7 @@
                                             </a>
                                         </li>
                                     </ul>
-                                </li>
+                                </li> */?>
                             </ul>
                         </li>
                         <!-- Dropdown Currency Selection End -->
@@ -121,13 +115,8 @@
                             <a href="<?=base_url()?>">Home</a>
                         </li>
                         <li>
-                            <a href="<?=base_url()?>/store">Store</a>
-                        </li>
-                        <li>
                             <a href="<?=base_url()?>/contact">Contact Us</a>
                         </li>
-                        </li>
-                        <li><a href="<?=base_url()?>/about">About Us</a></li>
                     </ul>
                 </nav>
             </div>

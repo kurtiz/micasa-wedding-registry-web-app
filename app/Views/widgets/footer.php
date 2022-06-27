@@ -5,20 +5,21 @@
             <div class="container-footer ptb-100">
                 <div class="row">
                     <!-- Single Footer Start -->
-                    <div class="single-footer col-lg-7 col-md-7">
+                    <div class="single-footer col-lg-6 col-md-6">
                         <div class="footer-logo">
                             <a href="<?=base_url()?>">
-<!--                                <img class="img" src="--><?//=base_url()?><!--/public/img/logo/logo.webp" alt="logo-img">-->
-                                <h2><strong>MiCasa</strong></h2>
+                                <img class="img" style="height: 120px" src="<?=base_url()?>/public/img/logo/logo.svg" alt="logo-img">
                             </a>
                         </div>
+                    </div>
+                    <div class="single-footer col-lg-6 col-md-6">
                         <div class="footer-content">
-                            <p>We deliver the best quality.</p>
+                            <?php /* <p>We deliver the best quality.</p> */?>
                             <h5 class="contact-info mtb-10">contact info:</h5>
                             <ul class="footer-list first-content">
-                                <li><i class="pe-7s-map-marker"></i>Address will be here</li>
-                                <li><i class="pe-7s-mail"></i>your-email@example.com</li>
-                                <li><i class="pe-7s-call"></i>+00 123 45678</li>
+                                <li><i class="pe-7s-map-marker"></i>55 Lagos Avenue, <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Accra, Ghana</li>
+                                <li><i class="pe-7s-mail"></i>micasaghana@gmail.com</li>
+                                <li><i class="pe-7s-call"></i>+233 55 609 8900</li>
                             </ul>
                         </div>
                     </div>
@@ -26,18 +27,7 @@
 
 
                     <!-- Single Footer Start -->
-                    <div class="single-footer col-lg-5 col-md-5">
-                        <h4 class="footer-title">NEWSLETTER</h4>
-                        <div class="footer-content subscribe-form">
-                            <p class="mb-25">Subscribe to our newsletter and get updated on our discounts</p>
-                            <div class="subscribe-box">
-                                <form action="#">
-                                    <input type="email" name="subscribe_email" id="subscribe_email" required placeholder="Enter you email address here...">
-                                    <input type="submit" class="submit" value="subscribe">
-                                </form>
-                            </div>
-                        </div>
-                    </div>
+
                     <!-- Single Footer Start -->
                 </div>
                 <!-- Row End -->

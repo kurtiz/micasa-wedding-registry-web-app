@@ -18,5 +18,7 @@
 <script src="<?=base_url()?>/public/js/bootstrap.bundle.min.js"></script>
 <!-- plugins -->
 <script src="<?=base_url()?>/public/js/plugins.js"></script>
+<script src="<?=base_url()?>/public/js/js-cookie.js"></script>
+<script src="<?=base_url()?>/public/js/vendor/jquery-toast-plugin/dist/jquery.toast.min.js"></script>
 <!-- main js -->
 <script src="<?=base_url()?>/public/js/main.js"></script>

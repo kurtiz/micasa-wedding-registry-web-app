@@ -330,5 +330,7 @@ NOTE: main.js, All custom script and plugin activation script in this file.
         scrollText: '<i class="fa fa-angle-up" aria-hidden="true"></i>', // Text for element
         activeOverlay: false// Set CSS color to display scrollUp active point, e.g '#00FFFF'
     });
-   
+
+
 })(jQuery);
+
