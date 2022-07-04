@@ -24,4 +24,19 @@ class ProductsModel extends Model {
             return false;
         }
     }
+
+    public function getProductQuantity(string $store_id, string $product_id) {
+        $builder = $this->db->table("products");
+        $builder->where([
+            'store_id' => $store_id,
+            'product_id' => $product_id
+        ]);
+        $builder->select("quantity");
+        $result = $builder->get();
+        if ($result->resultID->num_rows == 1) {
+            return $result->getRowArray();
+        } else {
+            return false;
+        }
+    }
 }

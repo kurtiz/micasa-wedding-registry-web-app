@@ -76,7 +76,14 @@
                     <!-- Section Title Start -->
                     <div class="col-12">
                         <div class="section-title text-center mb-40">
-                            <span class="section-desc mb-15">Wedding Registry</span>
+                            <span class="mb-15" style="font-family: 'Playfair Display',
+                            serif; text-transform: capitalize">
+                                <h2>
+                                    <strong>
+                                        Wedding Registry
+                                    </strong>
+                                </h2>
+                            </span>
                         </div>
                     </div>
                     <!-- Section Title End -->
@@ -94,7 +101,9 @@
                                 $image = ["", "", ""];
                             }
                              ?>
-                    <div class="col-6 px-1">
+                            <?php if ($row["status"] == "active"):?>
+                                <?php if ((int)$row["quantity"] > 0):?>
+                                    <div class="col-6 col-lg-3 px-1">
                         <!-- New Products Activation Start -->
                         <div class="single-product">
                             <!-- Product Image Start -->
@@ -110,21 +119,26 @@
                             </div>
                             <!-- Product Image End -->
                             <!-- Product Content Start -->
-                            <div class="pro-content text-center">
-                                <h4><a href="javascript:void(0)"><?=$row["product_name"]?></a></h4>
+                            <div class="pro-content price-style text-center">
+                                <h4><a href="javascript:void(0)"><b><?=$row["product_name"]?></b></a></h4>
                                 <p class="price">
-                                    <span class="currency-symbol">$</span>
-                                    <span class="commas"><?=$row["cost_price"]?></span>
+                                    <b>
+                                        <span class="currency-symbol">$</span>
+                                        <span class="commas"><?=$row["cost_price"]?></span>
+                                    </b>
                                 </p>
                                 <div class="action-links2 quick-view">
                                     <a data-bs-toggle="tooltip" style="color: #fffce0" title="Add to Cart"
-                                       href="javascript:void(0)">add to cart</a>
+                                       href="javascript:addToCart(<?=$row['product_id']?>, `<?=$row['product_name']?>`,
+                                       <?=$row['cost_price']?>, 1, '<?=$image[0]?>')">add to cart</a>
                                 </div>
                             </div>
                             <!-- Product Content End -->
                         </div>
                         <!-- New Products Activation End -->
                     </div>
+                                <?php endif;?>
+                            <?php endif;?>
                         <?php endforeach;?>
                     <?php else:?>
                         <div class="col-6 px-1">
@@ -182,7 +196,7 @@
             <!-- Modal content Start -->
             <div class="modal-content">
                 <div class="modal-header">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    <button type="button" id="close-modal" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
                 <!-- Modal Body Start -->
                 <div class="modal-body">
@@ -237,7 +251,7 @@
                                     <!-- Thumbnail Description Start -->
                                     <div class="col-lg-7 col-md-6">
                                         <div class="thubnail-desc fix">
-                                            <h2 class="product-header mb-2" id="product-name">Sheepskin Pillow2</h2>
+                                            <h2 class="product-header mb-2" id="product-name">Product Name</h2>
                                             <!-- Product Rating End -->
                                             <!-- Product Price Start -->
                                             <div class="pro-price mb-15">
@@ -263,15 +277,16 @@
                                                 <div class="quantity-item">
                                                     <label>Qty: </label>
                                                     <div class="cart-plus-minus">
-                                                        <input class="cart-plus-minus-box" type="text" name="qty"
-                                                               value="1">
+                                                        <input class="cart-plus-minus-box" type="text"  id="modal-quantity" name="qty"
+                                                               value="1" max="">
+                                                        <input type="text" readonly value="1" style="display: none" id="product-quantity" name=""/>
                                                     </div>
                                                 </div>
                                             </div>
                                             <!-- Product Box Quantity End -->
                                             <!-- Product Button Actions Start -->
                                             <div class="product-button-actions">
-                                                <button id="add-cart" class="add-to-cart">add to cart</button>
+                                                <button id="add-cart" data-product-id="" class="add-to-cart">add to cart</button>
                                             </div>
                                             <!-- Product Button Actions End -->
                                         </div>
@@ -300,34 +315,51 @@
     <script>
 
         gloVar = "";
+        const base_url = "<?=ADMIN_URL?>";
+        const local_url = "<?=base_url()?>";
+        let Cart = {};
+        let products = {};
         $(document).ready(() => {
-            let cookie = <?=json_encode((object)$products)?>;
-            localStorage.setItem("products", JSON.stringify(cookie));
+          products = <?=json_encode((object)$products)?>;
+            saveWithExpiry("products", JSON.stringify(products), "3600000");
             if(!getCookie("currency")){
                 setCookie("currency", "usd", 3);
             }
+
+            if(getWithExpiry("cart") !== null && getWithExpiry("cart") !== "{}"){
+                Cart =  JSON.parse(getWithExpiry("cart"))
+                for(const key in Cart){
+                    addToCartWithoutToast(Cart[key].id, Cart[key].name, Cart[key].price, Cart[key].quantity, Cart[key].image)
+                }
+            }
             addComma("commas")
+
         })
 
         function populate(id) {
-            const base_url = "<?=ADMIN_URL?>";
+
             let defaultImg = "/public/img/uploads/products/product-default-image.png";
             let largeThumbs = $(".largeThumbs");
             let smallThumbs = $(".smallThumbs");
             let productName = $("#product-name");
             let productPrice = $("#product-price");
             let productDesc = $("#product-desc");
+            let productQuantity = $("#product-quantity");
+            let modalQuantity = $("#modal-quantity");
+            let btnAddCart = $("#add-cart");
             let index = 0;
+            productQuantity.val(1)
+            modalQuantity.val(1)
+            // let products = getWithExpiry("products");
+            // products = JSON.parse(products);
 
-            let cookie = localStorage.getItem("products");
-            cookie = JSON.parse(cookie);
-            // cookie = JSON.parse(cookie);
-
-            let product = getObjects(cookie, "product_id", id);
+            let product = getObjects(products, "product_id", id);
             product = product[0];
             productName.text(product.product_name)
             productPrice.text(product.cost_price)
             productDesc.text(product.description)
+            btnAddCart.prop("data-product-id", id)
+            modalQuantity.prop("max", product.quantity)
 
 
             if (product.image !== "") {
@@ -344,7 +376,7 @@
                 }
             }
 
-            addComma("commas")
+            addComma("commas-modal")
         }
     </script>
     </body>

@@ -22,6 +22,9 @@
 <link rel="stylesheet" href="<?=base_url()?>/public/js/vendor/jquery-toast-plugin/dist/jquery.toast.min.css">
 <!-- responsive css -->
 <link rel="stylesheet" href="<?=base_url()?>/public/css/responsive.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet">
 
 <!-- modernizr js -->
 <script src="<?=base_url()?>/public/js/vendor/modernizr-3.11.2.min.js"></script>

@@ -39,45 +39,27 @@
                         </li>
                         <!-- Search Box End -->
 <!--                        <li><a href="--><?//=base_url();?><!--/wishlist"><i class="pe-7s-like"></i><span style="display: none">2</span></a></li>-->
-                        <li><i class="pe-7s-shopbag"></i><span style="display: none">2</span>
+                        <li><i class="pe-7s-shopbag"></i>
+                            <span style="display: none" id="cart-count"></span>
                             <ul class="ht-dropdown main-cart-box">
                                 <li>
-                                    <!-- Cart Box Start -->
-                                    <div class="single-cart-box">
-                                        <div class="cart-img">
-                                            <a href="index.html#"><img src="<?=base_url()?>/public/img/menu/1.webp" alt="cart-image"></a>
-                                        </div>
-                                        <div class="cart-content">
-                                            <h6><a href="index.html#">Alpha Block Black Polo T-Shirt</a></h6>
-                                            <span>1 × $399.00</span>
-                                        </div>
-                                        <i class="pe-7s-close"></i>
+                                    <div id="shopping-cart">
+
                                     </div>
-                                    <!-- Cart Box End -->
-                                    <!-- Cart Box Start -->
-                                    <div class="single-cart-box">
-                                        <div class="cart-img">
-                                            <a href="index.html#"><img src="<?=base_url()?>/public/img/menu/2.webp" alt="cart-image"></a>
-                                        </div>
-                                        <div class="cart-content">
-                                            <h6><a href="index.html#">Red Printed Round Neck T-Shirt</a></h6>
-                                            <span>2 × $299.00</span>
-                                        </div>
-                                        <i class="pe-7s-close"></i>
-                                    </div>
-                                    <!-- Cart Box End -->
                                     <!-- Cart Footer Inner Start -->
                                     <div class="cart-footer fix">
-                                        <h5>total :<span class="f-right">$698.00</span></h5>
+                                        <h5>total : $<span id="cart-total" class="f-right">0.00</span></h5>
                                         <div class="cart-actions">
-                                            <a class="checkout" href="<?=base_url()?>/checkout">Checkout</a>
+<!--                                            <a class="checkout" href="--><?//=base_url()?><!--/checkout">Checkout</a>-->
+                                            <br>
+                                            <a class="go-to-cart" id="go-cart" href="<?=base_url()?>/cart">Go To Cart</a>
                                         </div>
                                     </div>
                                     <!-- Cart Footer Inner End -->
                                 </li>
                             </ul>
                         </li>
-                        <!-- Dropdown Currency Selection Start -->
+                        <!-- Dropdown Currency Selection Start --> <?php /*
                         <li><i class="pe-7s-config"></i>
                             <ul class="ht-dropdown currrency">
                                 <li>
@@ -87,7 +69,7 @@
                                         <li>$ US Dollar</li>
                                     </ul>
                                 </li>
-                               <?php /* <li>
+                                <li>
                                     <h3>my account</h3>
                                     <ul>
                                         <li><a href="<?= base_url() ?>/register">

@@ -14,8 +14,6 @@ class Home extends BaseController {
     public function index() {
 
         $data["products"] = $this->productsModel->getProducts(STORE_ID);
-
-        set_cookie("products", json_encode($data['products']), 172800);
 		return view('home', $data);
 	}
 }

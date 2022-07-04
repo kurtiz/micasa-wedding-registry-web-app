@@ -91,7 +91,6 @@ input {
     text-transform: capitalize
 }
 h1,
-h2,
 h3,
 h4,
 h5,
@@ -99,6 +98,13 @@ h6 {
     font-weight: 500;
     margin-top: 0px;
     text-transform: uppercase;
+    font-style: normal;
+    margin: 0;
+    color: #1a1a1a;
+}
+h2 {
+    font-weight: 500;
+    margin-top: 0px;
     font-style: normal;
     margin: 0;
     color: #1a1a1a;
