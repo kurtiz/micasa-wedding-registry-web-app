@@ -2,24 +2,27 @@
     <!-- Footer Middle Start -->
     <div class="footer-middle">
         <div class="container">
-            <div class="container-footer ptb-100">
+            <div class="container-footer">
                 <div class="row">
                     <!-- Single Footer Start -->
-                    <div class="single-footer col-lg-6 col-md-6">
-                        <div class="footer-logo">
-                            <a href="<?=base_url()?>">
-                                <img class="img" style="height: 120px" src="<?=base_url()?>/public/img/logo/logo.svg" alt="logo-img">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="single-footer col-lg-6 col-md-6">
+<!--                    <div class="single-footer col-lg-6 col-md-6">-->
+<!--                        <div class="footer-logo">-->
+<!--                            <a href="--><?//=base_url()?><!--">-->
+<!--                                <img class="img" style="height: 120px" src="--><?//=base_url()?><!--/public/img/logo/logo.svg" alt="logo-img">-->
+<!--                            </a>-->
+<!--                        </div>-->
+<!--                    </div>-->
+                    <div class="single-footer col-md-12 mb-3">
                         <div class="footer-content">
                             <?php /* <p>We deliver the best quality.</p> */?>
-                            <h5 class="contact-info mtb-10">contact info:</h5>
+                            <h5 class="contact-info">contact info:</h5>
                             <ul class="footer-list first-content">
                                 <li><i class="pe-7s-map-marker"></i>55 Lagos Avenue, <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Accra, Ghana</li>
+                                <li><i class="pe-7s-clock"></i>Working Hours: </li>
+                                <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mondays - Saturdays</li>
+                                <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9am - 7pm </li>
                                 <li><i class="pe-7s-mail"></i>micasaghana@gmail.com</li>
-                                <li><i class="pe-7s-call"></i>+233 55 609 8900</li>
+                                <li><i class="pe-7s-call"></i>+233 54 843 9427</li>
                             </ul>
                         </div>
                     </div>

@@ -665,7 +665,7 @@ ul.pull-left.home-4-search i {
     font-weight: 600;
 }
 
-.ht-dropdown.main-cart-box .cart-actions a.checkout {
+.ht-dropdown.main-cart-box .cart-actions a.go-to-cart {
     background: #e24646;
     color: #fffce0 !important;
     border: 2px solid transparent;
@@ -683,9 +683,33 @@ ul.pull-left.home-4-search i {
     -o-transition: all 0.3s ease-in-out;
 }
 
-.ht-dropdown.main-cart-box .cart-actions a.checkout:hover {
+.ht-dropdown.main-cart-box .cart-actions a.go-to-cart:hover {
     border-color: #ea3a3c80;
     background: #ea3a3c80;
+}
+
+.ht-dropdown.main-cart-box .cart-actions a.checkout {
+    background: #fffce0;
+    color:  #e24646;
+    border: 2px solid #e24646;
+    display: block;
+    padding: 11px 0;
+    text-align: center;
+    font-size: 11px;
+    line-height: 1;
+    font-weight: 400;
+    text-transform: uppercase;
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+.ht-dropdown.main-cart-box .cart-actions a.checkout:hover {
+    border-color: transparent;
+    background: #ea3a3c;
+    color: #fffce0;
 }
 
 .del-icone {
@@ -4036,4 +4060,9 @@ input[type="radio"] {
 }
 .login-form .form-control{
     font-size: 13px;
+}
+
+.price-style {
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
 }
