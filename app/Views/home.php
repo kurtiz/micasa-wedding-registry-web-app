@@ -33,7 +33,7 @@
                     <span class="popup_off">Close</span>
                     <div class="subscribe_area text-center">
                         <h2>Newsletter</h2>
-                        <p>Subscribe to the Nevara mailing list to receive updates on new arrivals, special offers and
+                        <p>Subscribe to the Micasa mailing list to receive updates on new arrivals, special offers and
                             other discount information.</p>
                         <div class="subscribe-form-group">
                             <form action="#">
@@ -89,7 +89,7 @@
                     <!-- Section Title End -->
                 </div>
                 <div class="row px-1 mb-10">
-                    <?php if (!is_array($products)):?>
+                    <?php if (isset($products) && is_array($products)):?>
                         <?php foreach($products as $row):?>
                             <?php
                             if ($row['image'] !== "") {
