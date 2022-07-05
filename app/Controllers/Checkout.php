@@ -78,7 +78,7 @@ class Checkout extends Controller
                         return view("cart");
                     }
                 }
-                return redirect()->to(base_url()."/thankyou");
+                return redirect()->to(base_url()."/ThankYou");
             } else {
                 $data["message"] = "An Error Occurred";
                 return redirect()->to(base_url()."/cart");

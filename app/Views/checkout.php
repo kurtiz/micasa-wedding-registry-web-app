@@ -180,7 +180,7 @@
             // let paymentForm = $('#checkout-form');
             function payWithPayStack(e) {
                 e.preventDefault();
-                let amountPayable = parseFloat($("#checkout-total").text().replaceAll(",", "")) * 7.91;
+                let amountPayable = parseFloat($("#checkout-total").text().replaceAll(",", "")) * 8.10;
                 amountPayable = parseFloat(amountPayable).toFixed(2);
                 amountPayable = parseFloat(amountPayable) * 100
                 let reference = '' + Math.floor((Math.random() * 1000000000) + 1);
