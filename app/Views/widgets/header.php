@@ -19,7 +19,7 @@
                     <nav>
                         <ul class="primary-menu-list text-center">
                             <li>
-                                <a href="#">Home</a>
+                                <a href="<?= base_url() ?>">Home</a>
                             </li>
                             <li>
                                 <a href="<?= base_url() ?>/contact">Contact Us</a>
@@ -33,32 +33,34 @@
             <div class="col-lg-3 col-7 col-full-xs">
                 <div class="main-selection">
                     <ul class="selection-list text-end">
-                        <!-- Searcch Box Start -->
+                        <!-- Search Box Start -->
                         <li class="hidden-control">
 
                         </li>
                         <!-- Search Box End -->
 <!--                        <li><a href="--><?//=base_url();?><!--/wishlist"><i class="pe-7s-like"></i><span style="display: none">2</span></a></li>-->
-                        <li><i class="pe-7s-shopbag"></i>
-                            <span style="display: none" id="cart-count"></span>
-                            <ul class="ht-dropdown main-cart-box">
-                                <li>
-                                    <div id="shopping-cart">
+                        <?php if(session()->getTempdata("page") == "home"):?>
+                            <li><i class="pe-7s-shopbag"></i>
+                                <span style="display: none" id="cart-count"></span>
+                                <ul class="ht-dropdown main-cart-box">
+                                    <li>
+                                        <div id="shopping-cart">
 
-                                    </div>
-                                    <!-- Cart Footer Inner Start -->
-                                    <div class="cart-footer fix">
-                                        <h5>total : $<span id="cart-total" class="f-right">0.00</span></h5>
-                                        <div class="cart-actions">
-<!--                                            <a class="checkout" href="--><?//=base_url()?><!--/checkout">Checkout</a>-->
-                                            <br>
-                                            <a class="go-to-cart" id="go-cart" href="<?=base_url()?>/cart">Go To Cart</a>
                                         </div>
-                                    </div>
-                                    <!-- Cart Footer Inner End -->
-                                </li>
-                            </ul>
-                        </li>
+                                        <!-- Cart Footer Inner Start -->
+                                        <div class="cart-footer fix">
+                                            <h5>total : $<span id="cart-total" class="f-right">0.00</span></h5>
+                                            <div class="cart-actions">
+    <!--                                            <a class="checkout" href="--><?//=base_url()?><!--/checkout">Checkout</a>-->
+                                                <br>
+                                                <a class="go-to-cart" id="go-cart" href="<?=base_url()?>/cart">Go To Cart</a>
+                                            </div>
+                                        </div>
+                                        <!-- Cart Footer Inner End -->
+                                    </li>
+                                </ul>
+                            </li>
+                        <?php endif; ?>
                         <!-- Dropdown Currency Selection Start --> <?php /*
                         <li><i class="pe-7s-config"></i>
                             <ul class="ht-dropdown currrency">

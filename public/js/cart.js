@@ -56,7 +56,7 @@ function addToCart(id, name, price, quantity, image) {
                         `<h6><a href="javascript:void(0)">${name}</a></h6>\n` +
                         `<span id="item-quantity-${id}"> ${quantity}</span> ` +
                         ` × <span id="item-price-${id}"> ${Number(price).toLocaleString('en-US')}` +
-                        `<input id="price-handler-${id}" class="sum" type="text" style="display: none" readonly value="${price}"/></span>\n` +
+                        `<input id="price-handler-${id}" class="sum" type="text" style="display: none" readonly value="${price * quantity}"/></span>\n` +
                         `</div>\n` +
                         `<i onClick="deleteRow(${id}, 'cart-total', 'sum')" style="color: tomato" class="pe-7s-close"></i>\n` +
                         `</div>`
@@ -181,6 +181,24 @@ function overallSum(sumClass) {
     return Number(ans).toLocaleString();
 }
 
+function overallSumLabel(sumClass) {
+    // gets the value of the class name
+    let overallSum = $(`.${sumClass}`);
+    // an array to store all the totals of product prices
+    let sum_arr = [];
+
+    // loop to push the totals to the array. the idea is to be
+    // able to sum the content of the array
+    // to get the overall total
+    for (let i = 0; i < overallSum.length; i++)
+        sum_arr.push(
+            parseFloat(overallSum.eq(i).text().replaceAll(",", ""))
+        );
+
+    let ans = array_sum(sum_arr);
+    return Number(ans).toLocaleString();
+}
+
 
 /**
  * deletes the item the cart
@@ -190,9 +208,16 @@ function overallSum(sumClass) {
  */
 function deleteRow(id, cart_id, sumClass) {
     $(`#item-${id}`).remove() // deletes the item from the cart
-    $(`#${cart_id}`).text(overallSum(`${sumClass}`)) // updates the cart's total amount
-    delete Cart[`${id}`] // deletes the item from the cart object
-    saveWithExpiry("cart", JSON.stringify(Cart), "3600000") // save the cart data in the localStorage
+    if (typeof Cart !== 'undefined') {// checks if the cart object exists
+        delete Cart[`${id}`] // deletes the item from the cart object
+        saveWithExpiry("cart", JSON.stringify(Cart), "3600000") // save the cart data in the localStorage
+        $(`#${cart_id}`).text(overallSum(`${sumClass}`)) // updates the cart's total amount
+    } else {
+        $(`#${cart_id}`).text(overallSumLabel(`${sumClass}`)) // updates the cart's total amount
+        $(`#total-cart-input`).val(overallSumLabel(`${sumClass}`).replaceAll(",","")) // updates the cart's total amount
+    }
+
+
 }
 
 /**
@@ -236,10 +261,47 @@ function getWithExpiry(key) {
     return item.value
 }
 
+
+function sendCartToCheckout(){
+    $("#cart-table").submit()
+}
+
+$("#add-cart").on("click", function () {
+    let max = Number($("#modal-quantity").prop("max"));
+    let currentValue = Number($("#modal-quantity").val());
+    let productQuantity = $("#product-quantity")
+    if (currentValue > max) {
+        $("#modal-quantity").val(max)
+        productQuantity.val(max)
+        $.toast({
+            text: 'quantity requested exceeded available quantity',
+            showHideTransition: 'slide',
+            position: "top-right",
+            icon: 'error',
+            bgColor: '#ea3a3c',
+            textColor: '#fffbdb',
+            loaderBg: '#ffffff',
+            stack: 2
+        })
+    } else {
+        productQuantity.val(currentValue)
+        let id = $(this).prop("data-product-id") // get product id of the current product in the modal
+        let largeThumbs = $(".largeThumbs")[0].src; // gets the image url for the thumbnail of the product
+        let productName = $("#product-name").text(); // gets the name of the product
+        let productPrice = Number($("#product-price").text().replaceAll(",", "")); //gets the price of the product
+        productQuantity = Number($("#product-quantity").val()); //gets the quantity of the product
+        addToCart(id, productName, productPrice, productQuantity, largeThumbs.replace(base_url, "")) // adds the product to
+        // the cart
+        $("#close-modal").click()
+    }
+
+})
+
+
 /**
  * makes sure the user doesn't order more than the available quantity
  */
-$("#modal-quantity").on("change", function () {
+$("#modal-quantity").on("keyup", function () {
     let max = Number($(this).prop("max"));
     let currentValue = Number($(this).val());
     let productQuantity = $("#product-quantity")
@@ -261,16 +323,7 @@ $("#modal-quantity").on("change", function () {
     }
 })
 
-$("#add-cart").on("click", function () {
-    let id = $(this).prop("data-product-id") // get product id of the current product in the modal
-    let largeThumbs = $(".largeThumbs")[0].src; // gets the image url for the thumbnail of the product
-    let productName = $("#product-name").text(); // gets the name of the product
-    let productPrice = Number($("#product-price").text().replaceAll(",", "")); //gets the price of the product
-    let productQuantity = Number($("#product-quantity").val()); //gets the quantity of the product
-    addToCart(id, productName, productPrice, productQuantity, largeThumbs.replace(base_url, "")) // adds the product to
-    // the cart
-    $("#close-modal").click()
-})
+
 
 $("#go-cart").on("click", function (e) {
     e.preventDefault(); // prevent the link from redirecting
