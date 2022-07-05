@@ -150,7 +150,7 @@
                                             </div>
                                         </div>
                                         <div class="order-button-payment">
-                                            <input id="makePayment" onclick="payWithPayStack()" type="submit" value="Place order"/>
+                                            <input id="makePayment" type="submit" value="Place order"/>
                                         </div>
                                     </div>
                                 </div>
