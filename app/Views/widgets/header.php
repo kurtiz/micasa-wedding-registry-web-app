@@ -18,12 +18,14 @@
                 <div class="primary-menu">
                     <nav>
                         <ul class="primary-menu-list text-center">
+                        <?php /*
                             <li>
                                 <a href="<?= base_url() ?>">Home</a>
                             </li>
                             <li>
                                 <a href="<?= base_url() ?>/contact">Contact Us</a>
                             </li>
+                          */ ?>
                         </ul>
                     </nav>
                 </div>
