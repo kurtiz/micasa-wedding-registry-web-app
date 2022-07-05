@@ -1,4 +1,4 @@
-<link rel="shortcut icon" type="image/x-icon" href="<?=base_url()?>/public/favicon.ico">
+<link rel="shortcut icon" type="image/x-icon" href="<?=base_url()?>/public/img/logo/favicon.svg">
 <!-- mobile menu css -->
 <link rel="stylesheet" href="<?=base_url()?>/public/css/meanmenu.min.css">
 <!-- animate css -->
