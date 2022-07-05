@@ -8,6 +8,6 @@ class Login extends Controller {
 
     public function index(){
 
-        return view("home");
+        return redirect()->to(base_url());
     }
 }
