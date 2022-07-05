@@ -12,7 +12,7 @@ class Home extends BaseController {
     }
 
     public function index() {
-
+        session()->setTempdata("page", "home", "3");
         $data["products"] = $this->productsModel->getProducts(STORE_ID);
 		return view('home', $data);
 	}

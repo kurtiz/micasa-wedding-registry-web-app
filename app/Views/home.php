@@ -60,7 +60,7 @@
             <div class="slider-wrapper theme-default">
                 <!-- Slider Background  Image Start-->
                 <div id="slider" class="nivoSlider">
-                    <img src="<?= base_url() ?>/public/img/slider/AOA.png" data-thumb="img/slider/AOA.png" alt=""
+                    <img class="p-20" src="<?= base_url() ?>/public/img/slider/AOA.png" data-thumb="img/slider/AOA.png" alt=""
                          title="#htmlcaption"/>
                 </div>
                 <!-- Slider Background  Image Start-->
@@ -277,7 +277,7 @@
                                                 <div class="quantity-item">
                                                     <label>Qty: </label>
                                                     <div class="cart-plus-minus">
-                                                        <input class="cart-plus-minus-box" type="text"  id="modal-quantity" name="qty"
+                                                        <input class="cart-plus-minus-box" type="number"  id="modal-quantity" name="qty"
                                                                value="1" max="">
                                                         <input type="text" readonly value="1" style="display: none" id="product-quantity" name=""/>
                                                     </div>
@@ -329,7 +329,17 @@
             if(getWithExpiry("cart") !== null && getWithExpiry("cart") !== "{}"){
                 Cart =  JSON.parse(getWithExpiry("cart"))
                 for(const key in Cart){
-                    addToCartWithoutToast(Cart[key].id, Cart[key].name, Cart[key].price, Cart[key].quantity, Cart[key].image)
+                    for (let _ in products) {
+                        if (products[_].product_id === key) {
+                            if(parseInt(products[_].quantity) > 0){
+                                addToCartWithoutToast(Cart[key].id, Cart[key].name, Cart[key].price, Cart[key].quantity, Cart[key].image);
+                            } else {
+                                delete Cart[key];
+                                saveWithExpiry("cart", JSON.stringify(Cart), "3600000")
+                            }
+                        }
+                    }
+
                 }
             }
             addComma("commas")

@@ -23,15 +23,24 @@ class Cart extends Controller {
             foreach ($cart as $item){
                 foreach ($data['products'] as $product){
                     if ($product["product_id"] == $item["id"]) {
-                        $productQuantity = (int)$product["quantity"] - $item["quantity"];
-                        if($productQuantity < 1){
-                            "";
+                        $productQuantity = (int)$product["quantity"] - (int)$item["quantity"];
+                        if($productQuantity < 0){
+                            // $item["available"] = (int)$item["quantity"] - $productQuantity;
+                            $item["msg"] = "Items seems to be out of stock. Please go back and check product or remove it from the cart!!";
+                        } else {
+//                            echo "<br>".$productQuantity."<br>".$product["quantity"];
+                            $item["msg"] = "available";
                         }
                     }
                 }
+
+                $data["cart"][] = $item;
             }
+//            echo "<pre>";
+//            var_dump($data["cart"]);
+//            echo "</pre>";
+//            exit;
         }
-        exit;
         return view("cart", $data);
     }
 
