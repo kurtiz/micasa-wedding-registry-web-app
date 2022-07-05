@@ -57,11 +57,14 @@
         <!-- Slider Area Start -->
         <div class="slider-area pb-10">
             <!-- Main Slider Area Start -->
-            <div class="slider-wrapper theme-default">
+            <div class="">
                 <!-- Slider Background  Image Start-->
-                <div id="slider" class="nivoSlider">
-                    <img class="p-20" src="<?= base_url() ?>/public/img/slider/AOA.png" data-thumb="img/slider/AOA.png" alt=""
-                         title="#htmlcaption"/>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <img class="p-20 img-fluid mx-auto d-block" style="width: 350px" src="<?= base_url() ?>/public/img/slider/AOA.png" alt=""/>
+                        </div>
+                    </div>
                 </div>
                 <!-- Slider Background  Image Start-->
 
