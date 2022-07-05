@@ -327,22 +327,36 @@ $("#modal-quantity").on("keyup", function () {
 
 $("#go-cart").on("click", function (e) {
     e.preventDefault(); // prevent the link from redirecting
-    $.post(`${local_url}/cart/send`, Cart, function (data) { // post request
-        data = JSON.parse(data) // parsing the received data to JSON object
-        if (data.msg === "success") { // checking message for success
-            window.location = `${local_url}/cart` //redirects to the cart page
-        } else {
-            // displays a notification to the user that the cart could not be forwarded to the server
-            $.toast({
-                text: 'Something went wrong! Please reload the page',
-                showHideTransition: 'slide',
-                position: "top-right",
-                icon: 'error',
-                bgColor: '#ea3a3c',
-                textColor: '#fffbdb',
-                loaderBg: '#fffbdb',
-                stack: 2
-            })
-        }
-    })
+    if(typeof Cart !== 'undefined' && Object.keys(Cart).length !== 0) {
+        $.post(`${local_url}/cart/send`, Cart, function (data) { // post request
+            data = JSON.parse(data) // parsing the received data to JSON object
+            if (data.msg === "success") { // checking message for success
+                window.location = `${local_url}/cart` //redirects to the cart page
+            } else {
+                // displays a notification to the user that the cart could not be forwarded to the server
+                $.toast({
+                    text: 'Something went wrong! Please reload the page',
+                    showHideTransition: 'slide',
+                    position: "top-right",
+                    icon: 'error',
+                    bgColor: '#ea3a3c',
+                    textColor: '#fffbdb',
+                    loaderBg: '#fffbdb',
+                    stack: 2
+                })
+            }
+        })
+    } else {
+        // displays a notification to the user that the cart could not be forwarded to the server
+        $.toast({
+            text: 'Cart is empty! Add item before going to cart',
+            showHideTransition: 'slide',
+            position: "top-right",
+            icon: 'error',
+            bgColor: '#ea3a3c',
+            textColor: '#fffbdb',
+            loaderBg: '#fffbdb',
+            stack: 2
+        })
+    }
 })
