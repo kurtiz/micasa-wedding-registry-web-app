@@ -65,7 +65,6 @@
                     <form id="checkout-form" action="<?= base_url() ?>/checkout/send" method="post" class="row">
                         <div class="col-lg-6">
                             <div class="checkbox-form pb-50">
-                                <h3>Please These Details</h3>
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="checkout-form-list">

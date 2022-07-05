@@ -89,7 +89,7 @@
                     <!-- Section Title End -->
                 </div>
                 <div class="row px-1 mb-10">
-                    <?php if (is_array($products)):?>
+                    <?php if (!is_array($products)):?>
                         <?php foreach($products as $row):?>
                             <?php
                             if ($row['image'] !== "") {
@@ -114,7 +114,7 @@
                                 </a>
                                 <div class="quick-view" onclick="populate('<?=$row["product_id"]?>')" style="background: grey">
                                     <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#myModal"><i
-                                                class="pe-7s-look"></i>quick view</a>
+                                                class="pe-7s-look"></i>view</a>
                                 </div>
                             </div>
                             <!-- Product Image End -->
@@ -141,32 +141,14 @@
                             <?php endif;?>
                         <?php endforeach;?>
                     <?php else:?>
-                        <div class="col-6 px-1">
+                        <div class="col-12 px-1 text-center">
                             <!-- New Products Activation Start -->
-                            <div class="single-product">
-                                <!-- Product Image Start -->
-                                <div class="pro-img">
-                                    <a href="javascript:void(0)">
-                                        <img class="primary-img" src="<?= base_url() ?>/public/img/new-products/2_1.webp"
-                                             alt="single-product">
-                                    </a>
-                                    <div class="quick-view" style="background: grey">
-                                        <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#myModal"><i
-                                                    class="pe-7s-look"></i>quick view</a>
-                                    </div>
-                                </div>
-                                <!-- Product Image End -->
-                                <!-- Product Content Start -->
-                                <div class="pro-content text-center">
-                                    <h4><a href="javascript:void(0)">Carte Postal Clock</a></h4>
-                                    <p class="price"><span>$2000</span></p>
-                                    <div class="action-links2 quick-view">
-                                        <a data-bs-toggle="tooltip" style="color: #fffce0" title="Add to Cart"
-                                           href="javascript:void(0)">add to cart</a>
-                                    </div>
-                                </div>
-                                <!-- Product Content End -->
-                            </div>
+                            <h3>
+                                All Products are out of stock.
+                            </h3>
+                            <p>
+                                Please come back later....
+                            </p>
                             <!-- New Products Activation End -->
                         </div>
                     <?php endif;?>
