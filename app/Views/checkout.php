@@ -65,7 +65,6 @@
                     <form id="checkout-form" action="<?= base_url() ?>/checkout/send" method="post" class="row">
                         <div class="col-lg-6">
                             <div class="checkbox-form pb-50">
-                                <h3>Please These Details</h3>
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="checkout-form-list">
@@ -180,7 +179,7 @@
             // let paymentForm = $('#checkout-form');
             function payWithPayStack(e) {
                 e.preventDefault();
-                let amountPayable = parseFloat($("#checkout-total").text().replaceAll(",", "")) * 7.91;
+                let amountPayable = parseFloat($("#checkout-total").text().replaceAll(",", "")) * 8.10;
                 amountPayable = parseFloat(amountPayable).toFixed(2);
                 amountPayable = parseFloat(amountPayable) * 100
                 let reference = '' + Math.floor((Math.random() * 1000000000) + 1);

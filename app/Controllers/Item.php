@@ -14,7 +14,7 @@ class Item extends Controller {
 
     public function index(){
 
-        return view("item");
+        return view("home");
     }
 
     public function quantity($id){

@@ -33,7 +33,7 @@
                     <span class="popup_off">Close</span>
                     <div class="subscribe_area text-center">
                         <h2>Newsletter</h2>
-                        <p>Subscribe to the Nevara mailing list to receive updates on new arrivals, special offers and
+                        <p>Subscribe to the Micasa mailing list to receive updates on new arrivals, special offers and
                             other discount information.</p>
                         <div class="subscribe-form-group">
                             <form action="#">
@@ -57,11 +57,14 @@
         <!-- Slider Area Start -->
         <div class="slider-area pb-10">
             <!-- Main Slider Area Start -->
-            <div class="slider-wrapper theme-default">
+            <div class="">
                 <!-- Slider Background  Image Start-->
-                <div id="slider" class="nivoSlider">
-                    <img class="p-20" src="<?= base_url() ?>/public/img/slider/AOA.png" data-thumb="img/slider/AOA.png" alt=""
-                         title="#htmlcaption"/>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <img class="p-20 img-fluid mx-auto d-block" style="width: 350px" src="<?= base_url() ?>/public/img/slider/AOA.png" alt=""/>
+                        </div>
+                    </div>
                 </div>
                 <!-- Slider Background  Image Start-->
 
@@ -89,7 +92,7 @@
                     <!-- Section Title End -->
                 </div>
                 <div class="row px-1 mb-10">
-                    <?php if (is_array($products)):?>
+                    <?php if (isset($products) && is_array($products)):?>
                         <?php foreach($products as $row):?>
                             <?php
                             if ($row['image'] !== "") {
@@ -114,7 +117,7 @@
                                 </a>
                                 <div class="quick-view" onclick="populate('<?=$row["product_id"]?>')" style="background: grey">
                                     <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#myModal"><i
-                                                class="pe-7s-look"></i>quick view</a>
+                                                class="pe-7s-look"></i>view</a>
                                 </div>
                             </div>
                             <!-- Product Image End -->
@@ -141,32 +144,14 @@
                             <?php endif;?>
                         <?php endforeach;?>
                     <?php else:?>
-                        <div class="col-6 px-1">
+                        <div class="col-12 px-1 text-center">
                             <!-- New Products Activation Start -->
-                            <div class="single-product">
-                                <!-- Product Image Start -->
-                                <div class="pro-img">
-                                    <a href="javascript:void(0)">
-                                        <img class="primary-img" src="<?= base_url() ?>/public/img/new-products/2_1.webp"
-                                             alt="single-product">
-                                    </a>
-                                    <div class="quick-view" style="background: grey">
-                                        <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#myModal"><i
-                                                    class="pe-7s-look"></i>quick view</a>
-                                    </div>
-                                </div>
-                                <!-- Product Image End -->
-                                <!-- Product Content Start -->
-                                <div class="pro-content text-center">
-                                    <h4><a href="javascript:void(0)">Carte Postal Clock</a></h4>
-                                    <p class="price"><span>$2000</span></p>
-                                    <div class="action-links2 quick-view">
-                                        <a data-bs-toggle="tooltip" style="color: #fffce0" title="Add to Cart"
-                                           href="javascript:void(0)">add to cart</a>
-                                    </div>
-                                </div>
-                                <!-- Product Content End -->
-                            </div>
+                            <h3>
+                                All Products are out of stock.
+                            </h3>
+                            <p>
+                                Please come back later....
+                            </p>
                             <!-- New Products Activation End -->
                         </div>
                     <?php endif;?>
